@@ -100,8 +100,11 @@ a:hover {
 
 /* Section Container Paddings */
 .section-padding {
-    padding: 4.5rem 0;
+    padding: 0rem 0;
 }
+.section-padding-trip{
+    padding: 2.5rem 0;}
+
 @media (max-width: 768px) {
     .section-padding {
         padding: 2.75rem 0;
@@ -587,7 +590,7 @@ a:hover {
 .stats-banner {
     background: linear-gradient(135deg, var(--primary-dark) 0%, #0A242A 100%);
     color: #FFFFFF;
-    padding: 4rem 0;
+    padding: 5rem 0;
 }
 .stat-number {
     font-size: 3rem;
