@@ -464,11 +464,14 @@ a:hover {
     transition: var(--transition);
 }
 .image-slot-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: var(--transition);
+
+  width: 100%;
+  height: 450px; /* Adjust height as needed */
+  object-fit: cover; /* Crops the image to fit the box without distorting */
+  object-position: top; /* Focuses the crop on the center of the image */
+  display: block;
+  margin: 0 auto;
+  transition: var(--transition);
 }
 .image-slot-wrapper.aspect-16-9 { aspect-ratio: 16 / 9; }
 .image-slot-wrapper.aspect-4-3 { aspect-ratio: 4 / 3; }
