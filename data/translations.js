@@ -320,7 +320,7 @@ const translations = {
         footer_contact_info: "संपर्क माहिती",
         footer_working_hours: "कामकाजाची वेळ: सकाळी १०:०० ते सायंकाळी ५:३० (रविवार व बँक सुट्टी वगळून)",
         footer_copyright: "© २०२६ गुरुकृपा अर्बन को-ऑप क्रेडिट सोसायटी लि. सर्व हक्क सुरक्षित.",
-        footer_disclaimer: "संकेतस्थळ रोहित मनाल द्वारे डिझाइन केलेले.",
+        footer_disclaimer: "संकेतस्थळ विघ्नहर्ता ई-वेब डिजिटल द्वारे डिझाइन केलेले.",
         
         // Official Required Label
         official_data_required: "[अधिकृत माहिती आवश्यक]",
@@ -671,7 +671,7 @@ const translations = {
         footer_contact_info: "Contact Info",
         footer_working_hours: "Working Hours: 10:00 AM to 5:30 PM (Except Sundays & Bank Holidays)",
         footer_copyright: "© 2026 Gurukrupa Urban Co-Op Credit Society Ltd. All rights reserved.",
-        footer_disclaimer: "Designed By Rohit Manal",
+        footer_disclaimer: "Designed By Vighnaharta E Web Digital",
         
         // Official Required Label
         official_data_required: "[OFFICIAL DATA REQUIRED]",
