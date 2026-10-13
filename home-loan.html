@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>गृह कर्ज | Home Loan | गुरुकृपा अर्बन</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mukta:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <!-- Top Utility Bar -->
+    <div class="top-bar d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="top-bar-left d-flex align-items-center">
+                <span class="me-3"><i class="bi bi-shield-check text-warning me-1"></i> <span
+                        data-i18n="registration_info">रजि. नं.: [OFFICIAL REG NO REQUIRED] | ISO 9001:2015 प्रमाणित
+                        संस्था</span></span>
+
+            </div>
+            <div class="top-bar-right d-flex align-items-center gap-3">
+                <a href="contact.html"><i class="bi bi-telephone me-1"></i> +91-7875221001</a>
+                <span class="text-white-50">|</span>
+                <a href="customer-service.html" data-i18n="nav_customer_service">ग्राहक सेवा</a>
+                <span class="text-white-50">|</span>
+                <!-- Language Switcher -->
+                <div class="lang-switcher d-none d-lg-flex">
+                    <button class="lang-btn active" data-lang="mr">मराठी</button>
+                    <button class="lang-btn" data-lang="en">English</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Main Floating Navigation Header -->
+    <header class="header-nav">
+        <div class="container">
+            <div class="header-grid-layout">
+
+                <!-- Column 1: Brand Logo & Identity -->
+                <div class="header-left-col">
+                    <a class="navbar-brand d-flex align-items-center gap-2 m-0" href="index.html">
+                        <div class="brand-logo-icon text-white d-flex align-items-center justify-content-center">
+                            <img src="assets\images\logo\image-removebg-preview.png" width="200px" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Column 2: Desktop Center Floating Navigation Pill (Exactly Centered) -->
+                <div class="header-center-col d-none d-lg-flex">
+                    <div class="nav-pill-container">
+                        <a class="nav-link" href="index.html" data-i18n="nav_home">मुख्यपृष्ठ</a>
+
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                data-i18n="nav_about">आमच्याविषयी</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about.html" data-i18n="nav_about_overview">संस्था
+                                        परिचय</a></li>
+                                <li><a class="dropdown-item" href="chairman-message.html"
+                                        data-i18n="nav_chairman_msg">अध्यक्षांचे मनोगत</a></li>
+                                <li><a class="dropdown-item" href="board-of-directors.html"
+                                        data-i18n="nav_directors">संचालक मंडळ</a></li>
+                                <li><a class="dropdown-item" href="partners.html" data-i18n="nav_partners">आमचे
+                                        भागीदार</a></li>
+                                <li><a class="dropdown-item" href="social-work.html" data-i18n="nav_social_work">सामाजिक
+                                        कार्य</a></li>
+                                <li><a class="dropdown-item" href="official-information.html">अधिकृत माहिती</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                data-i18n="nav_deposits">ठेवी</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="deposits.html" data-i18n="nav_all_deposits">सर्व ठेवी
+                                        योजना</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="fixed-deposit.html"
+                                        data-i18n="nav_fixed_deposit">मुदत ठेव (FD)</a></li>
+                                <li><a class="dropdown-item" href="recurring-deposit.html"
+                                        data-i18n="nav_recurring_deposit">आवर्त ठेव (RD)</a></li>
+                                <li><a class="dropdown-item" href="daily-deposit.html"
+                                        data-i18n="nav_daily_deposit">दैनिक ठेव (Pigmy)</a></li>
+                                <li><a class="dropdown-item" href="savings-account.html"
+                                        data-i18n="nav_savings_acc">बचत खाते</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                data-i18n="nav_loans">कर्ज योजना</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="loans.html" data-i18n="nav_all_loans">सर्व कर्ज
+                                        योजना</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="home-loan.html"
+                                        data-i18n="nav_home_loan">गृह कर्ज</a></li>
+                                <li><a class="dropdown-item" href="vehicle-loan.html"
+                                        data-i18n="nav_vehicle_loan">वाहन कर्ज</a></li>
+                                <li><a class="dropdown-item" href="business-loan.html"
+                                        data-i18n="nav_business_loan">व्यवसाय कर्ज</a></li>
+                                <li><a class="dropdown-item" href="gold-loan.html"
+                                        data-i18n="nav_gold_loan">सोने तारण कर्ज</a></li>
+                                <li><a class="dropdown-item" href="personal-loan.html"
+                                        data-i18n="nav_personal_loan">वैयक्तिक कर्ज</a></li>
+                                <li><a class="dropdown-item" href="education-loan.html"
+                                        data-i18n="nav_education_loan">शैक्षणिक कर्ज</a></li>
+                            </ul>
+                        </div>
+
+                        <a class="nav-link" href="interest-rates.html" data-i18n="nav_rates">व्याजदर</a>
+                        <a class="nav-link" href="news-media.html" data-i18n="nav_news">बातम्या आणि प्रसारमाध्यमं</a>
+                        <a class="nav-link" href="contact.html" data-i18n="nav_contact">संपर्क</a>
+                    </div>
+                </div>
+
+                <!-- Column 3: Right Utility Icon Cluster -->
+                <div class="header-right-col d-none d-lg-flex">
+                    <a href="notices.html" class="header-icon-btn" title="सूचना"><i
+                            class="bi bi-megaphone-fill"></i></a>
+                    <button class="header-icon-btn" type="button" data-bs-toggle="modal" data-bs-target="#searchModal"
+                        title="शोधा"><i class="bi bi-search"></i></button>
+
+                    <button type="button" class="btn-header-cta" data-bs-toggle="modal" data-bs-target="#enquiryModal"
+                        data-i18n="btn_apply_now">
+                        कर्जासाठी अर्ज करा <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Hamburger Toggle -->
+                <div class="d-flex align-items-center gap-2 d-lg-none">
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" data-lang="mr">मराठी</button>
+                        <button class="lang-btn" data-lang="en">English</button>
+                    </div>
+                    <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon text-dark"></span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer (Offcanvas) -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header border-bottom">
+            <div class="d-flex align-items-center gap-2" id="offcanvasNavbarLabel">
+                <div class="brand-logo-icon rounded-circle bg-primary text-white d-flex align-items-center justify-content-center"
+                    style="width: 36px; height: 36px; font-weight: 800;">ग</div>
+                <span class="fw-bold text-white" data-i18n="brand_short">गुरुकृपा अर्बन</span>
+            </div>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav_home">मुख्यपृष्ठ</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav_about">आमच्याविषयी</a>
+                </li>
+                <li class="nav-item"><a class="nav-link active" href="loans.html" data-i18n="nav_loans">कर्ज योजना</a></li>
+                <li class="nav-item"><a class="nav-link" href="deposits.html" data-i18n="nav_deposits">ठेवी</a></li>
+                <li class="nav-item"><a class="nav-link" href="interest-rates.html" data-i18n="nav_rates">व्याजदर</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="nav_services">सेवा</a></li>
+                <li class="nav-item"><a class="nav-link" href="customer-service.html"
+                        data-i18n="nav_customer_service">ग्राहक सेवा</a></li>
+                <li class="nav-item"><a class="nav-link" href="downloads.html" data-i18n="nav_downloads">डाउनलोड्स</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav_contact">संपर्क</a></li>
+            </ul>
+            <div class="mt-auto pt-4">
+                <button type="button" class="btn btn-primary-custom w-100 mb-2" data-bs-toggle="modal"
+                    data-bs-target="#enquiryModal" data-i18n="btn_apply_now">कर्जासाठी अर्ज करा</button>
+                <a href="contact.html" class="btn btn-secondary-custom w-100" data-i18n="btn_locate_branch">शाखा
+                    शोधा</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-5 bg-white border-bottom banner-section">
+        <div class="container py-3">
+            <nav aria-label="breadcrumb"><ol class="breadcrumb mb-2">
+                <li class="breadcrumb-item"><a href="index.html" data-i18n="nav_home">मुख्यपृष्ठ</a></li>
+                <li class="breadcrumb-item"><a href="loans.html" data-i18n="nav_all_loans">सर्व कर्ज योजना</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><span class="t-mr">गृह कर्ज</span><span class="t-en">Home Loan</span></li></ol></nav>
+            <div class="row align-items-center g-4 g-lg-5 mt-2">
+                <div class="col-lg-6">
+                    <span class="eyebrow-label"><i class="bi bi-house-heart me-1"></i> <span class="t-mr">कर्ज योजना</span><span class="t-en">Loan Scheme</span></span>
+                    <h1 class="display-5 fw-bold mb-3"><span class="t-mr">गृह कर्ज</span><span class="t-en">Home Loan</span></h1>
+                    <p class="fs-4 text-primary mb-3"><span class="t-mr">आपल्या हक्काच्या घराचे स्वप्न करा साकार</span><span class="t-en">Turn Your Dream of Owning a Home into Reality</span></p>
+                    <p class="fs-5 text-muted mb-4"><span class="t-mr">गुरुकृपा अर्बनचे गृह कर्ज आपल्याला स्वतःचे घर घेण्याचे स्वप्न साकार करण्यास मदत करते. कमीत कमी कागदपत्रे आणि त्वरित मंजुरी प्रक्रियेमुळे आपले घराचे स्वप्न सहज पूर्ण होते.</span><span class="t-en">Gurukrupa Urban Home Loan helps you fulfill your dream of owning a home. Minimal documentation and quick sanction process make home buying hassle-free.</span></p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="contact.html" class="btn btn-primary-custom"><span class="t-mr">कर्जासाठी अर्ज करा</span><span class="t-en">Apply for Loan</span> <i class="bi bi-arrow-right"></i></a>
+                        <a href="index.html#calculator" class="btn btn-secondary-custom"><i class="bi bi-calculator me-1"></i> <span class="t-mr">EMI मोजा</span><span class="t-en">Calculate EMI</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6"><div class="image-slot-wrapper"><img class="img-fluid" src="assets/images/loans/07_home_loan.jpg" alt="Home Loan"></div></div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding"><div class="container py-5">
+        <div class="row g-4 mb-5">
+            <div class="col-md-4"><div class="service-card text-center h-100"><div class="service-icon-box mx-auto"><i class="bi bi-percent"></i></div><h6 class="text-muted mb-1"><span class="t-mr">व्याजदर</span><span class="t-en">Interest Rate</span></h6><h4 class="text-primary mb-0"><span class="pending-badge"><span class="t-mr">लवकरच उपलब्ध</span><span class="t-en">Coming soon</span></span></h4><a class="small" href="interest-rates.html"><span class="t-mr">व्याजदर पाहा</span><span class="t-en">View interest rates</span></a></div></div>
+            <div class="col-md-4"><div class="service-card text-center h-100"><div class="service-icon-box mx-auto"><i class="bi bi-calendar-event"></i></div><h6 class="text-muted mb-1"><span class="t-mr">कमाल मुदत</span><span class="t-en">Max Tenure</span></h6><h4 class="text-primary mb-0"><span class="t-mr">२० वर्षांपर्यंत</span><span class="t-en">Up to 20 Years</span></h4></div></div>
+            <div class="col-md-4"><div class="service-card text-center h-100"><div class="service-icon-box mx-auto"><i class="bi bi-file-earmark-check"></i></div><h6 class="text-muted mb-1"><span class="t-mr">प्रक्रिया</span><span class="t-en">Process</span></h6><h4 class="text-primary mb-0"><span class="t-mr">कमीत कमी कागदपत्रे</span><span class="t-en">Minimal Documentation</span></h4></div></div>
+        </div>
+        <div class="row g-4 g-lg-5">
+            <div class="col-lg-6"><div class="story-block-card p-4 h-100"><h3 class="mb-4"><span class="t-mr">मुख्य फायदे</span><span class="t-en">Key Benefits</span></h3><ul class="list-unstyled fs-5"><li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><span class="t-mr">सुलभ हप्ते व दीर्घ मुदत</span><span class="t-en">Flexible EMIs &amp; Long Tenure</span></li><li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><span class="t-mr">पारदर्शक व्यवहार, लपलेले शुल्क नाही</span><span class="t-en">Transparent charges, no hidden fees</span></li><li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><span class="t-mr">घर बांधकाम व नूतनीकरणासाठीही उपलब्ध</span><span class="t-en">Available for construction &amp; renovation</span></li><li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><span class="t-mr">जलद दस्तऐवजीकरण व पडताळणी</span><span class="t-en">Quick documentation &amp; verification</span></li></ul></div></div>
+            <div class="col-lg-6">
+                <div class="story-block-card p-4 mb-4"><h3 class="mb-4"><span class="t-mr">पात्रता अटी</span><span class="t-en">Eligibility Criteria</span></h3><ul class="list-unstyled"><li class="mb-2"><i class="bi bi-person-check text-primary me-2"></i><span class="t-mr">संस्थेचे सभासदत्व आवश्यक</span><span class="t-en">Society Membership mandatory</span></li><li class="mb-2"><i class="bi bi-person-check text-primary me-2"></i><span class="t-mr">नियमित उत्पन्नाचा स्त्रोत (पगारदार किंवा व्यावसायिक)</span><span class="t-en">Regular source of income (Salaried or Self-Employed)</span></li><li class="mb-2"><i class="bi bi-person-check text-primary me-2"></i><span class="t-mr">वयोमर्यादा: २१ ते ६५ वर्षे</span><span class="t-en">Age Criteria: 21 to 65 Years</span></li></ul></div>
+                <div class="story-block-card p-4"><h3 class="mb-4"><span class="t-mr">आवश्यक कागदपत्रे</span><span class="t-en">Required Documents</span></h3><ul class="list-unstyled"><li class="mb-2"><i class="bi bi-file-earmark-text text-warning me-2"></i><span class="t-mr">ओळख पुरावा (आधार कार्ड, पॅन कार्ड)</span><span class="t-en">Identity Proof (Aadhaar, PAN)</span></li><li class="mb-2"><i class="bi bi-file-earmark-text text-warning me-2"></i><span class="t-mr">पत्ता पुरावा (वीज बिल, रेशन कार्ड)</span><span class="t-en">Address Proof (Electricity Bill, Ration Card)</span></li><li class="mb-2"><i class="bi bi-file-earmark-text text-warning me-2"></i><span class="t-mr">उत्पन्न पुरावा (६ महिन्यांचे बँक स्टेटमेंट, ६ महिन्यांचे पे-स्लिप / IT Return)</span><span class="t-en">Income Proof (6 Months Bank Statement, Salary Slips / ITR)</span></li><li class="mb-2"><i class="bi bi-file-earmark-text text-warning me-2"></i><span class="t-mr">मालमत्तेची कागदपत्रे (सेल डीड, लेआउट प्लॅन, मालमत्ता पत्रक)</span><span class="t-en">Property Documents (Sale Deed, Approved Layout, Property Card)</span></li></ul></div>
+            </div>
+        </div>
+        <div class="mt-5 d-flex flex-wrap gap-2"><a class="btn btn-sm btn-outline-secondary" href="vehicle-loan.html"><span class="t-mr">वाहन कर्ज</span><span class="t-en">Vehicle Loan</span></a><a class="btn btn-sm btn-outline-secondary" href="business-loan.html"><span class="t-mr">व्यवसाय कर्ज</span><span class="t-en">Business Loan</span></a><a class="btn btn-sm btn-outline-secondary" href="gold-loan.html"><span class="t-mr">सोने तारण कर्ज</span><span class="t-en">Gold Loan</span></a><a class="btn btn-sm btn-outline-secondary" href="personal-loan.html"><span class="t-mr">वैयक्तिक कर्ज</span><span class="t-en">Personal Loan</span></a><a class="btn btn-sm btn-outline-secondary" href="education-loan.html"><span class="t-mr">शैक्षणिक कर्ज</span><span class="t-en">Education Loan</span></a></div>
+    </div></section>
+    <!-- FOOTER -->
+    <footer class="site-footer ">
+        <div class="container ">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="brand-logo-icon mb-3">
+                        <img class="" src="assets/images/logo/image-removebg-preview.png" width="80%" alt="">
+                    </div>
+
+                    <p class="text-white-50" data-i18n="footer_about">गुरुकृपा अर्बन को-ऑप क्रेडिट सोसायटी लि.
+                        सभासदांच्या प्रगतीसाठी आणि सुरक्षित भविष्यासाठी वचनबद्ध असलेली छत्रपती संभाजीनगरमधील
+                        अग्रगण्य संस्था.</p>
+                    <p class="small text-white-50"><i class="bi bi-shield-check text-warning me-1"></i> ISO
+                        9001:2015 Certified</p>
+                    <div class="social-icons mb-3">
+                        <ul class="social-row">
+                            <li><a href="https://www.facebook.com/gurukrupa.urban.2025/"><i
+                                        class="fab fa-facebook"></i></a></li>
+                            <li><a href="https://www.facebook.com/Gurukrupaurbanaurangabad"><i
+                                        class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="https://www.instagram.com/gurukrupaurban/"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li><a href="https://x.com/GurukrupaU"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h5 data-i18n="footer_quick_links">महत्त्वाचे दुवे</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" data-i18n="nav_about">आमच्याविषयी</a></li>
+                        <li class="mb-2"><a href="chairman-message.html" data-i18n="nav_chairman_msg">अध्यक्षांचे
+                                मनोगत</a></li>
+                        <li class="mb-2"><a href="board-of-directors.html" data-i18n="nav_directors">संचालक मंडळ</a>
+                        </li>
+                        <li class="mb-2"><a href="interest-rates.html" data-i18n="nav_rates">व्याजदर</a></li>
+                        <li class="mb-2"><a href="notices.html" data-i18n="nav_notices">महत्त्वाच्या सूचना</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <h5 data-i18n="footer_products">आमची उत्पादने</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="home-loan.html" data-i18n="nav_home_loan">गृह
+                                कर्ज</a></li>
+                        <li class="mb-2"><a href="vehicle-loan.html" data-i18n="nav_vehicle_loan">वाहन
+                                कर्ज</a></li>
+                        <li class="mb-2"><a href="business-loan.html"
+                                data-i18n="nav_business_loan">व्यवसाय कर्ज</a></li>
+                        <li class="mb-2"><a href="fixed-deposit.html"
+                                data-i18n="nav_fixed_deposit">मुदत ठेव (FD)</a></li>
+                        <li class="mb-2"><a href="recurring-deposit.html"
+                                data-i18n="nav_recurring_deposit">आवर्त ठेव (RD)</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 data-i18n="footer_contact_info">संपर्क माहिती</h5>
+                    <p class="text-light mb-2"><i class="bi bi-geo-alt text-white me-2"></i> <span
+                            data-i18n="head_office">छत्रपती संभाजीनगर, महाराष्ट्र</span></p>
+                    <p class="text-light mb-2"><i class="bi bi-phone text-white me-2"></i> +91-7875221001</p>
+                    <p class="text-light mb-2"><i class="bi bi-telephone text-white me-2"></i> +91-02402485001</p>
+                    <p class="text-light mb-2"><i class="bi bi-envelope text-white me-2"></i> info@gurukrupaurban.com
+                    </p>
+                    <p class="text-white mt-3" data-i18n="footer_working_hours">कामकाजाची वेळ: सकाळी १०:००
+                        ते सायंकाळी ५:३०</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom d-flex  align-items-center justify-content-between">
+                <div class="text-white-50" data-i18n="footer_copyright">© २०२६ गुरुकृपा अर्बन को-ऑप क्रेडिट
+                    सोसायटी लि. सर्व हक्क सुरक्षित.</div>
+                <div class="text-white-50 text-center text-md-end" data-i18n="footer_disclaimer">विघ्नहर्ता ई-वेब
+                    डिजिटल द्वारे डिझाइन केलेले</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GLOBAL ENQUIRY MODAL OVERLAY -->
+    <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: var(--radius-lg);">
+                <div class="modal-header border-bottom p-4"
+                    style="background-color: var(--primary-dark); color: #FFFFFF; border-top-left-radius: var(--radius-lg); border-top-right-radius: var(--radius-lg);">
+                    <div>
+                        <h4 class="modal-title fw-bold text-white mb-1" id="enquiryModalLabel"
+                            data-i18n="btn_enquire_now">त्वरित चौकशी व अर्ज</h4>
+                        <p class="small text-white-50 mb-0" data-i18n="sub_tagline">गुरुकृपा अर्बनच्या सेवांसाठी
+                            ऑनलाईन नोंदणी करा</p>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 p-md-5">
+                    <form id="popupEnquiryForm"
+                        onsubmit="event.preventDefault(); alert('धन्यवाद! आपली चौकशी यशस्वीरित्या प्राप्त झाली आहे.'); bootstrap.Modal.getInstance(document.getElementById('enquiryModal')).hide(); this.reset();">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold" data-i18n="label_full_name">पूर्ण नाव</label>
+                                <input type="text" class="form-control form-control-custom" required
+                                    placeholder="उदा. राजेश शर्मा" data-i18n-placeholder="placeholder_name">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold" data-i18n="label_mobile">मोबाईल नंबर</label>
+                                <input type="tel" class="form-control form-control-custom" required
+                                    placeholder="उदा. 9822XXXXXX" data-i18n-placeholder="placeholder_mobile">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold" data-i18n="label_branch">शाखा निवडा</label>
+                                <select class="form-select form-control-custom" required>
+                                    <option value="" selected disabled>शाखा निवडा...</option>
+                                    <option value="main">मुख्य शाखा, छत्रपती संभाजीनगर</option>
+                                    <option value="cidco">सिडको शाखा</option>
+                                    <option value="waluj">वाळूज शाखा</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold" data-i18n="label_service">विषय / योजना</label>
+                                <select class="form-select form-control-custom" required>
+                                    <option value="home-loan">गृह कर्ज (Home Loan)</option>
+                                    <option value="vehicle-loan">वाहन कर्ज (Vehicle Loan)</option>
+                                    <option value="fixed-deposit">मुदत ठेव (Fixed Deposit)</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-bold" data-i18n="label_message">आपला संदेश
+                                    (ऐच्छिक)</label>
+                                <textarea class="form-control form-control-custom" rows="3"
+                                    placeholder="आपली चौकशी येथे लिहा..."
+                                    data-i18n-placeholder="placeholder_message"></textarea>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit"
+                                    class="btn btn-primary-custom w-100 py-3 font-weight-bold text-center"
+                                    data-i18n="btn_submit">चौकशी सादर करा</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEARCH MODAL OVERLAY -->
+    <!-- SEARCH MODAL OVERLAY -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: var(--radius-lg);">
+                <div class="modal-header border-bottom">
+                    <h5 class="modal-title font-weight-bold" data-i18n="search_title">संकेतस्थळ शोध</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="input-group input-group-lg mb-3">
+                        <span class="input-group-text bg-white border-end-0"><i
+                                class="bi bi-search text-muted"></i></span>
+                        <input type="text" class="form-control border-start-0" id="globalSearchInput"
+                            placeholder="शोधा... (उदा. गृह कर्ज, मुदत ठेव, व्याजदर, फॉर्म)"
+                            data-i18n-placeholder="search_placeholder">
+                    </div>
+                    <div id="globalSearchResults" class="mt-3">
+                        <!-- Live Search Results Injected Here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="data/translations.js"></script>
+        <script src="js/i18n.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>

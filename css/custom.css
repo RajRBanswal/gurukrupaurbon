@@ -1385,3 +1385,8 @@ a:hover {
     background-color: #007bff;
     color: #fff;
 }
+/* Bilingual inline text (static pages) */
+.t-en { display: none; }
+html[lang="en"] .t-en { display: inline; }
+html[lang="en"] .t-mr { display: none; }
+.pending-badge { display: inline-block; background: #FFF4DB; color: #8A5A00; border: 1px dashed #E0B040; border-radius: 999px; padding: .1rem .7rem; font-size: .85rem; font-weight: 600; }
